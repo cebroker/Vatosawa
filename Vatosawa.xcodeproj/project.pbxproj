@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05033EF7216BA3860031C7E6 /* Vatosawa.h in Headers */ = {isa = PBXBuildFile; fileRef = 05033EF6216BA3860031C7E6 /* Vatosawa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		258FBF0853C58322FDACB1EC /* Pods_VatosawaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A02631EEBEA16E6A90FD18 /* Pods_VatosawaTests.framework */; };
 		4B798416D1EA1C71AA91CD3A /* Pods_Vatosawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46560BB0B95D33C32A3C4AA8 /* Pods_Vatosawa.framework */; };
 		6C517B1C2169B5A50068DC50 /* Vatosawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C517B122169B5A40068DC50 /* Vatosawa.framework */; };
 		6C517B212169B5A50068DC50 /* VatosawaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C517B202169B5A50068DC50 /* VatosawaTests.swift */; };
-		6C517B232169B5A50068DC50 /* EvercheckWalletAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C517B152169B5A40068DC50 /* EvercheckWalletAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C517B2E2169BE320068DC50 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C517B2D2169BE320068DC50 /* BaseAPIClient.swift */; };
 		6C517B362169C5150068DC50 /* BaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C517B352169C5150068DC50 /* BaseEndpoint.swift */; };
 /* End PBXBuildFile section */
@@ -27,11 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05033EF6216BA3860031C7E6 /* Vatosawa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vatosawa.h; path = Vatosawa/Vatosawa.h; sourceTree = "<group>"; };
 		46560BB0B95D33C32A3C4AA8 /* Pods_Vatosawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vatosawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5802E878BDBBA0A25CD831 /* Pods-VatosawaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VatosawaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VatosawaTests/Pods-VatosawaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE26F46B25F68334AD810BC /* Pods-VatosawaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VatosawaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VatosawaTests/Pods-VatosawaTests.release.xcconfig"; sourceTree = "<group>"; };
 		6C517B122169B5A40068DC50 /* Vatosawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vatosawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C517B152169B5A40068DC50 /* EvercheckWalletAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvercheckWalletAPI.h; sourceTree = "<group>"; };
 		6C517B162169B5A40068DC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C517B1B2169B5A50068DC50 /* VatosawaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VatosawaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C517B202169B5A50068DC50 /* VatosawaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatosawaTests.swift; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				6C517B142169B5A40068DC50 /* Vatosawa */,
+				05033EF6216BA3860031C7E6 /* Vatosawa.h */,
 				6C517B1F2169B5A50068DC50 /* VatosawaTests */,
 				6C517B132169B5A40068DC50 /* Products */,
 				284AAA5E3CF8FDB79A84521F /* Pods */,
@@ -116,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				05033EEA216B85F10031C7E6 /* Network */,
-				6C517B152169B5A40068DC50 /* EvercheckWalletAPI.h */,
 				6C517B162169B5A40068DC50 /* Info.plist */,
 			);
 			path = Vatosawa;
@@ -147,7 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C517B232169B5A50068DC50 /* EvercheckWalletAPI.h in Headers */,
+				05033EF7216BA3860031C7E6 /* Vatosawa.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
