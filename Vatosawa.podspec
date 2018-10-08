@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Vatosawa"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "API pod for CE Broker"
   s.description  = "API pod for share between condorlabs projects"
 
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "" => "" }
   s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/cebroker/Vatosawa.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/cebroker/Vatosawa.git", :tag => "0.0.2 }
   #s.source       = { :path => '.' }
   s.source_files  = "Vatosawa"
   s.exclude_files = "Classes/Exclude"
