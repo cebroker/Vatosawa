@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "" => "" }
   s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/cebroker/Vatosawa.git", :tag => "0.0.2 }
+  s.source       = { :git => "https://github.com/cebroker/Vatosawa.git", :tag => "0.0.2" }
   #s.source       = { :path => '.' }
   s.source_files  = "Vatosawa"
   s.exclude_files = "Classes/Exclude"
