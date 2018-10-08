@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
 
   s.author             = { "" => "" }
   s.platform     = :ios, "12.0"
-  #s.source       = { :git => "http://EXAMPLE/Vatosawa.git", :tag => "#{s.version}" }
-  s.source       = { :path => '.' }
+  s.source       = { :git => "https://github.com/cebroker/Vatosawa.git", :tag => "0.0.1" }
+  #s.source       = { :path => '.' }
   s.source_files  = "Vatosawa"
   s.exclude_files = "Classes/Exclude"
   s.swift_version = "4.0" 
@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency 'Alamofire'
+  s.dependency 'RxSwift'
 end
