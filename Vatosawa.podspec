@@ -1,0 +1,27 @@
+Pod::Spec.new do |s|
+
+  s.name         = "Vatosawa"
+  s.version      = "0.0.1"
+  s.summary      = "API pod for CE Broker"
+  s.description  = "API pod for share between condorlabs projects"
+
+  s.homepage     = "http://condorlabs.io"
+  s.license      = "MIT"
+  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+
+  s.author             = { "" => "" }
+  s.platform     = :ios, "12.0"
+  #s.source       = { :git => "http://EXAMPLE/Vatosawa.git", :tag => "#{s.version}" }
+  s.source       = { :path => '.' }
+  s.source_files  = "Vatosawa"
+  s.exclude_files = "Classes/Exclude"
+  s.swift_version = "4.0" 
+
+  # s.resource  = "icon.png"
+  # s.resources = "Resources/*.png"
+
+  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency 'Alamofire'
+end
