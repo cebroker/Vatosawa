@@ -17,13 +17,13 @@ public protocol ClientProtocol {
     func upload<Response>(_ endpoint: Endpoint<Response>) -> Observable<Response>
 }
 
-enum APIAuthorizationType: String {
+public enum APIAuthorizationType: String {
     case truevault
     case wallet
     case none
 }
 
-enum APIContentType: String {
+public enum APIContentType: String {
     case json = "application/json"
     case formURLencoded = "application/x-www-form-urlencoded"
 }
