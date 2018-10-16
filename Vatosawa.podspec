@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Vatosawa"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "API pod for CE Broker"
   s.description  = "API pod for share between condorlabs projects"
 
@@ -15,8 +15,13 @@ Pod::Spec.new do |s|
   s.source_files  = "Vatosawa"
   s.exclude_files = "Classes/Exclude"
   s.swift_version = "4.0"
+  s.frameworks   = 'XCTest'
+
   s.dependency 'Alamofire'
   s.dependency 'RxSwift'
   s.dependency 'KeychainAccess'
   s.dependency 'PactConsumerSwift'
+  s.dependency 'BrightFutures', '~> 6.0'
+  s.dependency 'Nimble', '~> 7.0'
+  s.dependency 'Quick', '~> 1.1'
 end
