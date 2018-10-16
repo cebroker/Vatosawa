@@ -9,8 +9,7 @@ target 'Vatosawa' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'KeychainAccess'
-  pod 'PactConsumerSwift'
-
+ 
   target 'VatosawaTests' do
     inherit! :search_paths
     # Pods for testing
