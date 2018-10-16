@@ -32,7 +32,7 @@ extension Endpoint where Response: Decodable {
     convenience public init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json) {
         self.init(method: method, relativePath: relativePath, parameters: parameters, parameterEncoding: parameterEncoding, authorizationType: authorizationType, contentType: contentType ){
             let decoder = JSONDecoder()
-            //decoder.dateDecodingStrategy = .formatted(DateFormatter.walletApiDateFormat)
+            decoder.dateDecodingStrategy = .formatted(DateFormatter.walletApiDateFormat)
             return try decoder.decode(Response.self, from: $0)
         }
     }
