@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Vatosawa"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "API pod for CE Broker"
   s.description  = "API pod for share between condorlabs projects"
 
