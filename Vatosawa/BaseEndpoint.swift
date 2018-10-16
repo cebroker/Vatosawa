@@ -9,13 +9,13 @@
 import Alamofire
 
 public class Endpoint<Response> {
-    let method: HTTPMethod
-    let relativePath: String
-    let parameters: [String: Any]?
-    let parameterEncoding: ParameterEncoding
-    let decode: (Data) throws -> Response
-    let authorizationType: APIAuthorizationType
-    let contentType: APIContentType
+    public let method: HTTPMethod
+    public let relativePath: String
+    public let parameters: [String: Any]?
+    public let parameterEncoding: ParameterEncoding
+    public let decode: (Data) throws -> Response
+    public let authorizationType: APIAuthorizationType
+    public let contentType: APIContentType
     
     public init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json, decode: @escaping (Data) throws -> Response) {
         self.method = method

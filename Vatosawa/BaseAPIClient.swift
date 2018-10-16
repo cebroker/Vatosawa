@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 import RxSwift
 import KeychainAccess
-import RxSwift
 
 public protocol ClientProtocol {
     func request<Response>(_ endpoint: Endpoint<Response>) -> Observable<Response>
