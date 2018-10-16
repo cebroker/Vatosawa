@@ -8,6 +8,7 @@ target 'Vatosawa' do
   # Pods for Vatosawa
   pod 'Alamofire'
   pod 'RxSwift'
+  pod 'KeychainAccess'
 
   target 'VatosawaTests' do
     inherit! :search_paths

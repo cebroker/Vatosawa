@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		05033EF7216BA3860031C7E6 /* Vatosawa.h in Headers */ = {isa = PBXBuildFile; fileRef = 05033EF6216BA3860031C7E6 /* Vatosawa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05DB79A1217623AB00925DDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DB79A0217623AB00925DDC /* Constants.swift */; };
+		05DB79A42176258900925DDC /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DB79A32176258900925DDC /* CustomErrors.swift */; };
 		258FBF0853C58322FDACB1EC /* Pods_VatosawaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A02631EEBEA16E6A90FD18 /* Pods_VatosawaTests.framework */; };
 		4B798416D1EA1C71AA91CD3A /* Pods_Vatosawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46560BB0B95D33C32A3C4AA8 /* Pods_Vatosawa.framework */; };
 		6C517B1C2169B5A50068DC50 /* Vatosawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C517B122169B5A40068DC50 /* Vatosawa.framework */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		05033EF6216BA3860031C7E6 /* Vatosawa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vatosawa.h; path = Vatosawa/Vatosawa.h; sourceTree = "<group>"; };
+		05DB79A0217623AB00925DDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		05DB79A32176258900925DDC /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		46560BB0B95D33C32A3C4AA8 /* Pods_Vatosawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vatosawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5802E878BDBBA0A25CD831 /* Pods-VatosawaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VatosawaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VatosawaTests/Pods-VatosawaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE26F46B25F68334AD810BC /* Pods-VatosawaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VatosawaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VatosawaTests/Pods-VatosawaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				6C517B2D2169BE320068DC50 /* BaseAPIClient.swift */,
+				05DB79A22176257800925DDC /* Helpers */,
 				05033EEF216B869C0031C7E6 /* Endpoints */,
 			);
 			name = Network;
@@ -79,6 +84,15 @@
 				6C517B352169C5150068DC50 /* BaseEndpoint.swift */,
 			);
 			name = Endpoints;
+			sourceTree = "<group>";
+		};
+		05DB79A22176257800925DDC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05DB79A0217623AB00925DDC /* Constants.swift */,
+				05DB79A32176258900925DDC /* CustomErrors.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		284AAA5E3CF8FDB79A84521F /* Pods */ = {
@@ -256,11 +270,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VatosawaTests/Pods-VatosawaTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C517B2E2169BE320068DC50 /* BaseAPIClient.swift in Sources */,
+				05DB79A42176258900925DDC /* CustomErrors.swift in Sources */,
 				6C517B362169C5150068DC50 /* BaseEndpoint.swift in Sources */,
+				05DB79A1217623AB00925DDC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

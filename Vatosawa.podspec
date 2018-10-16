@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Vatosawa"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "API pod for CE Broker"
   s.description  = "API pod for share between condorlabs projects"
 
@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
   s.swift_version = "4.0"
   s.dependency 'Alamofire'
   s.dependency 'RxSwift'
+  s.dependency 'KeychainAccess'
 end
