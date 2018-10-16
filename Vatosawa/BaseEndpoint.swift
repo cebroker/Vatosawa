@@ -8,7 +8,7 @@
 
 import Alamofire
 
-open class Endpoint<Response> {
+public class Endpoint<Response> {
     let method: HTTPMethod
     let relativePath: String
     let parameters: [String: Any]?
@@ -17,7 +17,7 @@ open class Endpoint<Response> {
     let authorizationType: APIAuthorizationType
     let contentType: APIContentType
     
-    init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json, decode: @escaping (Data) throws -> Response) {
+    public init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json, decode: @escaping (Data) throws -> Response) {
         self.method = method
         self.relativePath = relativePath
         self.parameters = parameters
@@ -29,7 +29,7 @@ open class Endpoint<Response> {
 }
 
 extension Endpoint where Response: Decodable {
-    convenience init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json) {
+    convenience public init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json) {
         self.init(method: method, relativePath: relativePath, parameters: parameters, parameterEncoding: parameterEncoding, authorizationType: authorizationType, contentType: contentType ){
             let decoder = JSONDecoder()
             //decoder.dateDecodingStrategy = .formatted(DateFormatter.walletApiDateFormat)
@@ -39,7 +39,7 @@ extension Endpoint where Response: Decodable {
 }
 
 extension Endpoint where Response == Void {
-    convenience init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json) {
+    convenience public init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json) {
         self.init(method: method, relativePath: relativePath, parameters: parameters, parameterEncoding: parameterEncoding, authorizationType: authorizationType, contentType: contentType) { _ in }
     }
 }
