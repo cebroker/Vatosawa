@@ -43,3 +43,13 @@ extension Endpoint where Response == Void {
         self.init(method: method, relativePath: relativePath, parameters: parameters, parameterEncoding: parameterEncoding, authorizationType: authorizationType, contentType: contentType) { _ in }
     }
 }
+
+extension Endpoint where Response == String {
+    convenience public init(method: HTTPMethod = .get, relativePath: String, parameters: [String: Any]? = nil, parameterEncoding: ParameterEncoding = URLEncoding.default, authorizationType: APIAuthorizationType = .none, contentType: APIContentType = APIContentType.json) {
+        self.init(method: method, relativePath: relativePath, parameters: parameters, parameterEncoding: parameterEncoding, authorizationType: authorizationType, contentType: contentType) { response in
+            return String(
+                data: response,
+                encoding: String.Encoding.utf8) ?? ""
+        }
+    }
+}
