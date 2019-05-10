@@ -7,12 +7,6 @@
 //
 import RxSwift
 
-public protocol ClientProtocol {
-    var baseURL: String { get set }
-    func request<Response>(_ endpoint: Endpoint<Response>) -> Observable<Response>
-    func upload<Response>(_ endpoint: Endpoint<Response>) -> Observable<Response>
-}
-
 public enum APIAuthorizationType: String {
     case truevault
     case wallet
