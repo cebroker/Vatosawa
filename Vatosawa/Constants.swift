@@ -6,19 +6,30 @@
 //  Copyright © 2018 CE Broker. All rights reserved.
 //
 
-struct Constants  {
+public struct Constants  {
     
     struct AuthorizationType {
-        static let Basic = "Basic"
-        static let Bearer = "Bearer"
+        static let basic = "basic"
+        static let bearer = "bearer"
+        static let authorization = "Authorization"
+    }
+    
+    struct FileTypes {
+        static let jpeg = "jpg"
+        static let pdf = "pdf"
+        static let docx = "docx"
     }
     
     struct MIMEType {
         static let image = "image/*"
+        static let pdf = "application/pdf"
+        static let docx = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        static let any = "*/*"
     }
     
     struct Values {
         static let empty = ""
+        static let dot = "."
     }
     
     struct Keychain {

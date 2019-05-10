@@ -1,17 +1,14 @@
 //
-//  BaseAPIClient.swift
-//  EvercheckWalletAPI
+//  APIContract.swift
+//  Vatosawa
 //
-//  Created by Genesis Sanguino on 6/10/18.
-//  Copyright © 2018 CE Broker. All rights reserved.
+//  Created by Genesis Sanguino on 5/10/19.
+//  Copyright © 2019 CE Broker. All rights reserved.
 //
-
-import Foundation
-import Alamofire
 import RxSwift
-import KeychainAccess
 
 public protocol ClientProtocol {
+    var baseURL: String { get set }
     func request<Response>(_ endpoint: Endpoint<Response>) -> Observable<Response>
     func upload<Response>(_ endpoint: Endpoint<Response>) -> Observable<Response>
 }

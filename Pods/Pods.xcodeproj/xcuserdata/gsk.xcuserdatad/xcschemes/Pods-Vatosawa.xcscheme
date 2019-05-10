@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F76C3C105F34CEFB45D2B82DDB74919"
-               BuildableName = "Pods_EvercheckWalletAPITests.framework"
-               BlueprintName = "Pods-EvercheckWalletAPITests"
+               BlueprintIdentifier = "B623F05F078C84324BBC411DD1596AE1"
+               BuildableName = "Pods_Vatosawa.framework"
+               BlueprintName = "Pods-Vatosawa"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4F76C3C105F34CEFB45D2B82DDB74919"
-            BuildableName = "Pods_EvercheckWalletAPITests.framework"
-            BlueprintName = "Pods-EvercheckWalletAPITests"
+            BlueprintIdentifier = "B623F05F078C84324BBC411DD1596AE1"
+            BuildableName = "Pods_Vatosawa.framework"
+            BlueprintName = "Pods-Vatosawa"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
